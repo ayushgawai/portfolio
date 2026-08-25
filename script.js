@@ -181,11 +181,11 @@
       });
     });
 
-    window.gsap.from(".awards-inner > *", {
+    window.gsap.from(".awards-inner > .eyebrow, .awards-inner > h2, .awards-inner > .awards-lede, .award-panel", {
       opacity: 0,
       y: 24,
       duration: 0.7,
-      stagger: 0.1,
+      stagger: 0.08,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".awards",
