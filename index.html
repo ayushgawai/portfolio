@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ayush Gawai — Software Engineer & Data Engineer. Building reliable data systems for AI and product teams. Software Engineer Intern at Zoox, M.S. Applied Data Science at SJSU."
+    />
+    <meta name="author" content="Ayush Gawai" />
+    <meta property="og:title" content="Ayush Gawai — Portfolio" />
+    <meta
+      property="og:description"
+      content="Software & data engineer. SWE Intern @ Zoox · Data Engineer @ Zscaler · M.S. Applied Data Science @ SJSU"
+    />
+    <meta property="og:type" content="website" />
+    <title>Ayush Gawai — Software & Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="logo" href="#top">AG</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="brand-name">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="hero-orb hero-orb--a"></div>
+          <div class="hero-orb hero-orb--b"></div>
+          <svg class="hero-signal" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="signalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0d7377" stop-opacity="0" />
+                <stop offset="40%" stop-color="#0d7377" stop-opacity="0.55" />
+                <stop offset="100%" stop-color="#c4a35a" stop-opacity="0.15" />
+              </linearGradient>
+            </defs>
+            <path
+              class="signal-path"
+              d="M0,320 C80,280 120,380 200,300 S320,180 400,260 S520,380 600,280 S720,200 800,240"
+              fill="none"
+              stroke="url(#signalGrad)"
+              stroke-width="2"
+            />
+            <path
+              class="signal-path signal-path--delay"
+              d="M0,360 C100,340 140,420 220,350 S340,250 440,320 S560,400 660,310 S740,260 800,290"
+              fill="none"
+              stroke="url(#signalGrad)"
+              stroke-width="1.25"
+              opacity="0.45"
+            />
+          </svg>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-role">Software Engineer · Data Systems</p>
+          <h1 id="brand-name" class="brand">Ayush Gawai</h1>
+          <p class="hero-lede">
+            I turn messy, high-stakes data into systems people can trust — from cloud
+            analytics pipelines to the quality loops behind autonomous-vehicle training data.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:ayushsunilgawai@gmail.com">Email me</a>
+            <a
+              class="btn btn-ghost"
+              href="https://linkedin.com/in/ayushgawai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/ayushgawai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-heading">
+        <div class="section-intro">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-heading">A few things I’ve built when the problem wasn’t tidy.</h2>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-tag">Perception data · Zoox</span>
+              <span class="work-year">2026</span>
+            </div>
+            <h3>Miner quality that checks itself</h3>
+            <p>
+              Zoox’s Perception miners scan driving logs for the events that become training
+              data. I built an automated validation and observability layer so the fleet can
+              measure whether it’s finding the right examples — using existing human labels as
+              ground truth, with LLM help only where semantics are hard, and deterministic
+              systems everywhere correctness matters.
+            </p>
+          </article>
+
+          <article class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-tag">Research · SJSU</span>
+              <span class="work-year">2025–26</span>
+            </div>
+            <h3>When attention slips, the system should notice</h3>
+            <p>
+              Graduate research on cognitive workload and assistive mobility — syncing
+              eye-tracking and neural signals, then closing the loop with haptic feedback so
+              an AI can communicate decisions people can actually feel and trust. The work won
+              SJSU’s RSCA Research Competition and went on to the CSU stage.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/ayushgawai/ambodied-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Related research on GitHub</a
+            >
+          </article>
+
+          <article class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-tag">Stanford TreeHacks</span>
+              <span class="work-year">2026</span>
+            </div>
+            <h3>CarbonShift</h3>
+            <p>
+              A compute orchestrator that watches live carbon intensity and electricity price
+              signals, then shifts workloads when the grid is cleaner and cheaper — agent-style
+              decision loops with an explainability layer, built under hackathon pressure.
+            </p>
+            <a
+              class="text-link"
+              href="https://devpost.com/software/carbonshift"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on Devpost</a
+            >
+          </article>
+
+          <article class="work-item reveal">
+            <div class="work-meta">
+              <span class="work-tag">Data product</span>
+              <span class="work-year">SJSU</span>
+            </div>
+            <h3>Transit telemetry, made operable</h3>
+            <p>
+              Near real-time GPS streams are noisy — missing pings, uneven update rates,
+              outliers. I built ingestion through warehouse modeling so route delays,
+              dwell patterns, and anomalies show up as something an operations team can act on.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/ayushgawai/transit-system"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View on GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="exp-heading">
+        <div class="section-intro">
+          <p class="eyebrow">Experience</p>
+          <h2 id="exp-heading">Roles where reliability was the product.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <time datetime="2026-06">Jun 2026</time>
+              <span>– Aug 2026</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Engineer Intern · Zoox</h3>
+              <p class="place">Foster City, CA · Perception Data</p>
+              <p>
+                Worked across PyMiner and ZAP to make data mining for perception training
+                self-validating and easier to operate — backend APIs, scheduled fleet jobs,
+                UI surfaces, weekly reporting, and Slack alerts so engineers learn about
+                quality and failures without hunting for them.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <time datetime="2025-08">Aug 2025</time>
+              <span>– Present</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Graduate Research Assistant · San José State University</h3>
+              <p class="place">San José, CA</p>
+              <p>
+                Building human-centered AI systems with Prof. Guannan Liu’s lab — multimodal
+                signal pipelines, assistive mobility interfaces, and embodied AI prototypes
+                that treat attention and trust as first-class design constraints.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <time datetime="2024-01">Jan 2024</time>
+              <span>– Aug 2025</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Data Engineer · Zscaler</h3>
+              <p class="place">Pune, India · Cloud Security Analytics</p>
+              <p>
+                Owned the hard parts of CRM-to-warehouse analytics: nested Salesforce formulas
+                that broke incremental loads, metadata-driven SQL generation with real
+                validation guardrails, and integrations that connected marketing and delivery
+                tools into pipelines leadership could actually trust.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <time datetime="2021-08">Aug 2021</time>
+              <span>– Dec 2023</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Data Engineer · LatentView Analytics</h3>
+              <p class="place">Chennai, India</p>
+              <p>
+                Enterprise data platforms for a global media client — lakehouse migrations at
+                serious scale, automated validation before go-live, Airflow modernization, and
+                monitoring that caught SLA issues before they became escalations.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <time datetime="2021-02">Feb 2021</time>
+              <span>– Aug 2021</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Associate Software Engineer · Coditas</h3>
+              <p class="place">India · Healthcare backend</p>
+              <p>
+                Production Spring Boot services for a healthcare client — concurrency and
+                caching fixes, PostgreSQL tuning, and Dockerized CI so releases were less of a
+                gamble and APIs stayed stable under load.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="eyebrow">About</p>
+            <h2 id="about-heading">Comfortable owning the ambiguous middle.</h2>
+            <p>
+              I’m an M.S. Applied Data Science student at San José State University, based in
+              San José. My through-line is simple: take messy inputs — CRM formulas, AV logs,
+              neural signals, GPS noise — and leave behind systems that are reproducible,
+              observable, and useful to the people who depend on them.
+            </p>
+            <p>
+              I’ve shipped in cybersecurity analytics, consulting-scale data platforms, and
+              Perception data at Zoox. On the side I build products and research prototypes —
+              from a bootstrapped e-commerce storefront to TreeHacks experiments — because
+              ownership is how I learn fastest.
+            </p>
+          </div>
+
+          <aside class="skills" aria-labelledby="skills-heading">
+            <h3 id="skills-heading">Toolkit</h3>
+            <ul class="skill-groups">
+              <li>
+                <span class="skill-label">Languages</span>
+                <span>Python, SQL, TypeScript, Java, Bash</span>
+              </li>
+              <li>
+                <span class="skill-label">Backend &amp; data</span>
+                <span>FastAPI, PostgreSQL, Snowflake, dbt, Databricks, Airflow</span>
+              </li>
+              <li>
+                <span class="skill-label">Cloud &amp; delivery</span>
+                <span>AWS, Docker, GitHub Actions, Bazel, Kubernetes</span>
+              </li>
+              <li>
+                <span class="skill-label">Applied AI</span>
+                <span>Grounded LLMs, agent workflows, PyTorch, evaluation-first design</span>
+              </li>
+              <li>
+                <span class="skill-label">Focus</span>
+                <span>Data platforms, ML data quality, production observability</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-heading">Looking for teams that care about systems that hold up.</h2>
+        <p class="contact-lede">
+          Open to software and data engineering roles where ownership and clarity matter.
+          Based in San José — happy to talk.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:ayushsunilgawai@gmail.com">ayushsunilgawai@gmail.com</a>
+          <a
+            class="btn btn-ghost"
+            href="https://linkedin.com/in/ayushgawai"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://github.com/ayushgawai"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ayush Gawai</p>
+      <p class="footer-note">San José, CA</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
