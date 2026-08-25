@@ -2,7 +2,7 @@
 
 Personal site for job outreach. Static HTML/CSS/JS — no build step.
 
-**Live:** after Pages is on → `https://ayushgawai.github.io/Portfolio/`
+**Live:** https://ayushgawai.github.io/
 
 ## Preview
 
@@ -14,6 +14,4 @@ Open `http://localhost:8000`.
 
 ## GitHub Pages
 
-1. Repo **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main`, folder: `/ (root)`
+Hosted from the user site repo [`ayushgawai/ayushgawai.github.io`](https://github.com/ayushgawai/ayushgawai.github.io) (`main`, `/` root). This `portfolio` repo remains the working copy / mirror.
