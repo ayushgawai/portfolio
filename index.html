@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ayush Gawai — Software Engineer & Data Engineer. Building reliable data systems for AI and product teams. Software Engineer Intern at Zoox, M.S. Applied Data Science at SJSU."
+      content="Ayush Gawai — Software Engineer & Data Engineer. Building reliable data systems for AI and product teams."
     />
     <meta name="author" content="Ayush Gawai" />
     <meta property="og:title" content="Ayush Gawai — Portfolio" />
     <meta
       property="og:description"
-      content="Software & data engineer. SWE Intern @ Zoox · Data Engineer @ Zscaler · M.S. Applied Data Science @ SJSU"
+      content="SWE Intern @ Zoox · Data Engineer @ Zscaler · M.S. Applied Data Science @ SJSU"
     />
     <meta property="og:type" content="website" />
     <title>Ayush Gawai — Software & Data Engineer</title>
@@ -30,8 +30,8 @@
       <a class="logo" href="#top">AG</a>
       <nav class="nav" aria-label="Primary">
         <a href="#work">Work</a>
-        <a href="#experience">Experience</a>
         <a href="#achievements">Awards</a>
+        <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <a class="nav-cta" href="#contact">Contact</a>
       </nav>
@@ -71,7 +71,6 @@
             />
           </svg>
         </div>
-
         <div class="hero-content">
           <p class="hero-role">Software Engineer · Data Systems</p>
           <h1 id="brand-name" class="brand">
@@ -84,371 +83,197 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="mailto:ayushsunilgawai@gmail.com">Email me</a>
-            <a
-              class="btn btn-ghost"
-              href="https://linkedin.com/in/ayushgawai"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-            <a
-              class="btn btn-ghost"
-              href="https://github.com/ayushgawai"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
+            <a class="btn btn-ghost" href="https://linkedin.com/in/ayushgawai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/ayushgawai" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </section>
 
-      <section class="section work" id="work" aria-labelledby="work-heading">
-        <div class="section-intro">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="work-heading">A few things I’ve built when the problem wasn’t tidy.</h2>
+      <div class="work-header section" id="work">
+        <p class="eyebrow">Selected work</p>
+        <h2>A few things I’ve built when the problem wasn’t tidy.</h2>
+      </div>
+
+      <!-- Zoox — full-bleed chapter -->
+      <section class="chapter chapter--zoox" data-scene="zoox" aria-labelledby="zoox-title">
+        <div class="chapter-world" aria-hidden="true">
+          <div class="world-sky"></div>
+          <div class="world-hills"></div>
+          <div class="world-road">
+            <div class="road-line"></div>
+          </div>
+          <div class="zoox-cab">
+            <div class="cab-body">
+              <div class="cab-glass cab-glass--l"></div>
+              <div class="cab-glass cab-glass--r"></div>
+              <div class="cab-lidar"></div>
+            </div>
+            <div class="cab-wheel cab-wheel--l"></div>
+            <div class="cab-wheel cab-wheel--r"></div>
+          </div>
+          <div class="fog fog--a"></div>
+          <div class="fog fog--b"></div>
         </div>
-
-        <div class="work-list">
-          <!-- Zoox -->
-          <article class="work-item reveal" data-scene="zoox">
-            <div class="work-copy">
-              <div class="work-meta">
-                <span class="work-tag">Perception data · Zoox</span>
-                <span class="work-year">2026</span>
-              </div>
-              <h3>Miner quality that checks itself</h3>
-              <p>
-                Zoox’s Perception miners scan driving logs for the events that become training
-                data. I built an automated validation and observability layer so the fleet can
-                measure whether it’s finding the right examples — using existing human labels as
-                ground truth, with LLM help only where semantics are hard, and deterministic
-                systems everywhere correctness matters.
-              </p>
-            </div>
-            <div class="scene" aria-hidden="true">
-              <svg class="scene-svg" viewBox="0 0 360 200" role="img">
-                <defs>
-                  <linearGradient id="roadGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#d5dee6" />
-                    <stop offset="100%" stop-color="#b8c6d1" />
-                  </linearGradient>
-                </defs>
-                <rect class="scene-bg" x="0" y="0" width="360" height="200" rx="18" />
-                <path class="scene-hills" d="M0 118 Q60 90 120 110 T240 95 T360 120 V200 H0 Z" />
-                <rect x="0" y="138" width="360" height="62" fill="url(#roadGrad)" />
-                <g class="road-dashes">
-                  <rect x="12" y="166" width="28" height="4" rx="2" />
-                  <rect x="60" y="166" width="28" height="4" rx="2" />
-                  <rect x="108" y="166" width="28" height="4" rx="2" />
-                  <rect x="156" y="166" width="28" height="4" rx="2" />
-                  <rect x="204" y="166" width="28" height="4" rx="2" />
-                  <rect x="252" y="166" width="28" height="4" rx="2" />
-                  <rect x="300" y="166" width="28" height="4" rx="2" />
-                </g>
-                <g class="zoox-cab">
-                  <rect x="0" y="108" width="92" height="42" rx="10" class="cab-body" />
-                  <rect x="10" y="116" width="30" height="16" rx="3" class="cab-window" />
-                  <rect x="52" y="116" width="30" height="16" rx="3" class="cab-window" />
-                  <circle cx="22" cy="150" r="8" class="cab-wheel" />
-                  <circle cx="70" cy="150" r="8" class="cab-wheel" />
-                  <circle cx="22" cy="150" r="3.5" class="cab-hub" />
-                  <circle cx="70" cy="150" r="3.5" class="cab-hub" />
-                  <rect x="40" y="102" width="12" height="6" rx="2" class="cab-lidar" />
-                </g>
-              </svg>
-            </div>
-          </article>
-
-          <!-- Research / robotics -->
-          <article class="work-item reveal" data-scene="robot">
-            <div class="work-copy">
-              <div class="work-meta">
-                <span class="work-tag">Research · SJSU</span>
-                <span class="work-year">2025–26</span>
-              </div>
-              <h3>When attention slips, the system should notice</h3>
-              <p>
-                Graduate research on cognitive workload and assistive mobility — syncing
-                eye-tracking and neural signals, then closing the loop with haptic feedback so
-                an AI can communicate decisions people can actually feel and trust. The work won
-                SJSU’s RSCA Research Competition and went on to the CSU stage.
-              </p>
-              <a
-                class="text-link"
-                href="https://github.com/ayushgawai/ambodied-ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Related research on GitHub</a
-              >
-            </div>
-            <div class="scene" aria-hidden="true">
-              <svg class="scene-svg" viewBox="0 0 360 200" role="img">
-                <rect class="scene-bg" x="0" y="0" width="360" height="200" rx="18" />
-                <circle class="signal-ring ring-a" cx="180" cy="96" r="54" />
-                <circle class="signal-ring ring-b" cx="180" cy="96" r="72" />
-                <g class="bot">
-                  <rect x="148" y="58" width="64" height="52" rx="14" class="bot-head" />
-                  <circle cx="166" cy="80" r="5" class="bot-eye" />
-                  <circle cx="194" cy="80" r="5" class="bot-eye" />
-                  <rect x="168" y="94" width="24" height="6" rx="3" class="bot-mouth" />
-                  <rect x="160" y="110" width="40" height="48" rx="10" class="bot-body" />
-                  <g class="bot-arm">
-                    <rect x="200" y="118" width="42" height="10" rx="5" class="bot-limb" />
-                    <circle cx="246" cy="123" r="7" class="bot-hand" />
-                  </g>
-                  <rect x="138" y="118" width="22" height="10" rx="5" class="bot-limb" />
-                </g>
-                <g class="haptic-dots">
-                  <circle cx="268" cy="108" r="3" />
-                  <circle cx="282" cy="98" r="2.5" />
-                  <circle cx="292" cy="114" r="2" />
-                </g>
-              </svg>
-            </div>
-          </article>
-
-          <!-- CarbonShift -->
-          <article class="work-item reveal" data-scene="carbon">
-            <div class="work-copy">
-              <div class="work-meta">
-                <span class="work-tag">Stanford TreeHacks</span>
-                <span class="work-year">2026</span>
-              </div>
-              <h3>CarbonShift</h3>
-              <p>
-                A compute orchestrator that watches live carbon intensity and electricity price
-                signals, then shifts workloads when the grid is cleaner and cheaper — agent-style
-                decision loops with an explainability layer, built under hackathon pressure.
-              </p>
-              <a
-                class="text-link"
-                href="https://devpost.com/software/carbonshift"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View on Devpost</a
-              >
-            </div>
-            <div class="scene" aria-hidden="true">
-              <svg class="scene-svg" viewBox="0 0 360 200" role="img">
-                <rect class="scene-bg" x="0" y="0" width="360" height="200" rx="18" />
-                <g class="turbine">
-                  <rect x="98" y="78" width="6" height="90" class="tower" />
-                  <circle cx="101" cy="78" r="7" class="hub" />
-                  <g class="blades">
-                    <rect x="98" y="28" width="6" height="50" rx="3" />
-                    <rect x="98" y="28" width="6" height="50" rx="3" transform="rotate(120 101 78)" />
-                    <rect x="98" y="28" width="6" height="50" rx="3" transform="rotate(240 101 78)" />
-                  </g>
-                </g>
-                <g class="solar">
-                  <rect x="150" y="128" width="70" height="40" rx="4" class="panel" />
-                  <path d="M150 148 H220 M167 128 V168 M184 128 V168 M201 128 V168" class="panel-lines" />
-                </g>
-                <g class="grid-lines">
-                  <path d="M240 60 V150 M240 90 H300 M300 90 V150" />
-                  <circle class="grid-node" cx="240" cy="60" r="4" />
-                  <circle class="grid-node" cx="240" cy="90" r="4" />
-                  <circle class="grid-node" cx="300" cy="90" r="4" />
-                  <circle class="grid-node n-pulse" cx="300" cy="150" r="5" />
-                  <circle class="grid-node n-pulse delay" cx="240" cy="150" r="5" />
-                </g>
-                <path class="energy-bolt" d="M268 48 L258 78 H274 L262 118" />
-              </svg>
-            </div>
-          </article>
-
-          <!-- Transit -->
-          <article class="work-item reveal" data-scene="transit">
-            <div class="work-copy">
-              <div class="work-meta">
-                <span class="work-tag">Data product · VTA style</span>
-                <span class="work-year">SJSU</span>
-              </div>
-              <h3>Transit telemetry, made operable</h3>
-              <p>
-                Near real-time GPS streams are noisy — missing pings, uneven update rates,
-                outliers. I built ingestion through warehouse modeling so route delays,
-                dwell patterns, and anomalies show up as something an operations team can act on.
-              </p>
-              <a
-                class="text-link"
-                href="https://github.com/ayushgawai/transit-system"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View on GitHub</a
-              >
-            </div>
-            <div class="scene" aria-hidden="true">
-              <svg class="scene-svg" viewBox="0 0 360 200" role="img">
-                <rect class="scene-bg" x="0" y="0" width="360" height="200" rx="18" />
-                <rect x="0" y="150" width="360" height="50" class="street" />
-                <g class="lane-marks">
-                  <rect x="20" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="70" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="120" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="170" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="220" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="270" y="172" width="24" height="3" rx="1.5" />
-                  <rect x="320" y="172" width="24" height="3" rx="1.5" />
-                </g>
-                <g class="vta-bus">
-                  <rect x="0" y="108" width="118" height="48" rx="8" class="bus-body" />
-                  <rect x="10" y="116" width="22" height="16" rx="2" class="bus-window" />
-                  <rect x="38" y="116" width="22" height="16" rx="2" class="bus-window" />
-                  <rect x="66" y="116" width="22" height="16" rx="2" class="bus-window" />
-                  <rect x="94" y="116" width="16" height="16" rx="2" class="bus-window" />
-                  <text x="14" y="148" class="bus-label">VTA</text>
-                  <circle cx="28" cy="158" r="8" class="bus-wheel" />
-                  <circle cx="92" cy="158" r="8" class="bus-wheel" />
-                </g>
-                <g class="gps-ping">
-                  <circle cx="180" cy="70" r="4" class="ping-core" />
-                  <circle cx="180" cy="70" r="14" class="ping-ring" />
-                  <circle cx="180" cy="70" r="24" class="ping-ring delay" />
-                </g>
-              </svg>
-            </div>
-          </article>
-
-          <!-- LeRobot -->
-          <article class="work-item reveal" data-scene="lerobot">
-            <div class="work-copy">
-              <div class="work-meta">
-                <span class="work-tag">Robotics · SO-101</span>
-                <span class="work-year">2026</span>
-              </div>
-              <h3>SO-101 × LeRobot</h3>
-              <p>
-                Setup and tooling for the SO-101 arm with LeRobot — calibration, motor ID
-                fixes, teleoperation, and dataset recording so embodied AI experiments start
-                from a machine that actually moves the way you expect.
-              </p>
-              <a
-                class="text-link"
-                href="https://github.com/ayushgawai/so101-lerobot"
-                target="_blank"
-                rel="noopener noreferrer"
-                >View on GitHub</a
-              >
-            </div>
-            <div class="scene" aria-hidden="true">
-              <svg class="scene-svg" viewBox="0 0 360 200" role="img">
-                <rect class="scene-bg" x="0" y="0" width="360" height="200" rx="18" />
-                <ellipse cx="180" cy="168" rx="70" ry="10" class="arm-shadow" />
-                <g class="so-arm">
-                  <rect x="156" y="148" width="48" height="16" rx="4" class="arm-base" />
-                  <g class="arm-joint-1">
-                    <rect x="172" y="88" width="16" height="66" rx="6" class="arm-link" />
-                    <circle cx="180" cy="148" r="9" class="arm-joint" />
-                    <g class="arm-joint-2">
-                      <rect x="180" y="58" width="58" height="14" rx="6" class="arm-link" />
-                      <circle cx="180" cy="96" r="8" class="arm-joint" />
-                      <g class="gripper">
-                        <rect x="230" y="52" width="10" height="26" rx="3" class="arm-link" />
-                        <rect class="grip-l" x="240" y="48" width="18" height="6" rx="2" />
-                        <rect class="grip-r" x="240" y="76" width="18" height="6" rx="2" />
-                      </g>
-                    </g>
-                  </g>
-                </g>
-                <circle class="target-dot" cx="278" cy="64" r="6" />
-              </svg>
-            </div>
-          </article>
+        <div class="chapter-veil"></div>
+        <div class="chapter-copy reveal">
+          <p class="work-tag">Perception data · Zoox · 2026</p>
+          <h3 id="zoox-title">Miner quality that checks itself</h3>
+          <p>
+            Zoox’s Perception miners scan driving logs for the events that become training
+            data. I built an automated validation and observability layer so the fleet can
+            measure whether it’s finding the right examples — human labels as ground truth,
+            LLMs only where semantics are hard, deterministic systems everywhere correctness
+            matters.
+          </p>
         </div>
       </section>
 
-      <section class="section experience" id="experience" aria-labelledby="exp-heading">
-        <div class="section-intro">
-          <p class="eyebrow">Experience</p>
-          <h2 id="exp-heading">Roles where reliability was the product.</h2>
+      <!-- Research robot -->
+      <section class="chapter chapter--robot" data-scene="robot" aria-labelledby="robot-title">
+        <div class="chapter-world" aria-hidden="true">
+          <div class="pulse-field">
+            <span class="pulse"></span>
+            <span class="pulse pulse--d2"></span>
+            <span class="pulse pulse--d3"></span>
+          </div>
+          <div class="lab-bot">
+            <div class="lab-head">
+              <span class="lab-eye"></span>
+              <span class="lab-eye"></span>
+            </div>
+            <div class="lab-torso"></div>
+            <div class="lab-arm lab-arm--r"></div>
+            <div class="haptic">
+              <i></i><i></i><i></i>
+            </div>
+          </div>
         </div>
-
-        <ol class="timeline">
-          <li class="timeline-item reveal">
-            <div class="timeline-when">
-              <time datetime="2026-06">Jun 2026</time>
-              <span>– Aug 2026</span>
-            </div>
-            <div class="timeline-body">
-              <h3>Software Engineer Intern · Zoox</h3>
-              <p class="place">Foster City, CA · Perception Data</p>
-              <p>
-                Worked across PyMiner and ZAP to make data mining for perception training
-                self-validating and easier to operate — backend APIs, scheduled fleet jobs,
-                UI surfaces, weekly reporting, and Slack alerts so engineers learn about
-                quality and failures without hunting for them.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item reveal">
-            <div class="timeline-when">
-              <time datetime="2025-08">Aug 2025</time>
-              <span>– Present</span>
-            </div>
-            <div class="timeline-body">
-              <h3>Graduate Research Assistant · San José State University</h3>
-              <p class="place">San José, CA</p>
-              <p>
-                Building human-centered AI systems with Prof. Guannan Liu’s lab — multimodal
-                signal pipelines, assistive mobility interfaces, and embodied AI prototypes
-                that treat attention and trust as first-class design constraints.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item reveal">
-            <div class="timeline-when">
-              <time datetime="2024-01">Jan 2024</time>
-              <span>– Aug 2025</span>
-            </div>
-            <div class="timeline-body">
-              <h3>Data Engineer · Zscaler</h3>
-              <p class="place">Pune, India · Cloud Security Analytics</p>
-              <p>
-                Owned the hard parts of CRM-to-warehouse analytics: nested Salesforce formulas
-                that broke incremental loads, metadata-driven SQL generation with real
-                validation guardrails, and integrations that connected marketing and delivery
-                tools into pipelines leadership could actually trust.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item reveal">
-            <div class="timeline-when">
-              <time datetime="2021-08">Aug 2021</time>
-              <span>– Dec 2023</span>
-            </div>
-            <div class="timeline-body">
-              <h3>Data Engineer · LatentView Analytics</h3>
-              <p class="place">Chennai, India</p>
-              <p>
-                Enterprise data platforms for a global media client — lakehouse migrations at
-                serious scale, automated validation before go-live, Airflow modernization, and
-                monitoring that caught SLA issues before they became escalations.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item reveal">
-            <div class="timeline-when">
-              <time datetime="2021-02">Feb 2021</time>
-              <span>– Aug 2021</span>
-            </div>
-            <div class="timeline-body">
-              <h3>Associate Software Engineer · Coditas</h3>
-              <p class="place">India · Healthcare backend</p>
-              <p>
-                Production Spring Boot services for a healthcare client — concurrency and
-                caching fixes, PostgreSQL tuning, and Dockerized CI so releases were less of a
-                gamble and APIs stayed stable under load.
-              </p>
-            </div>
-          </li>
-        </ol>
+        <div class="chapter-veil"></div>
+        <div class="chapter-copy reveal">
+          <p class="work-tag">Research · SJSU · 2025–26</p>
+          <h3 id="robot-title">When attention slips, the system should notice</h3>
+          <p>
+            Graduate research on cognitive workload and assistive mobility — syncing
+            eye-tracking and neural signals, then closing the loop with haptic feedback so
+            an AI can communicate decisions people can feel and trust. Won SJSU’s RSCA
+            Research Competition and advanced to the CSU stage.
+          </p>
+          <a class="text-link" href="https://github.com/ayushgawai/ambodied-ai" target="_blank" rel="noopener noreferrer">Related research on GitHub</a>
+        </div>
       </section>
 
+      <!-- CarbonShift -->
+      <section class="chapter chapter--carbon" data-scene="carbon" aria-labelledby="carbon-title">
+        <div class="chapter-world" aria-hidden="true">
+          <svg class="grid-svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+            <g class="power-lines" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M80 520 V220 H320 V120" />
+              <path d="M320 120 H560 V280 H820 V180" />
+              <path d="M560 280 V480" />
+              <path d="M820 180 H1040 V420" />
+            </g>
+            <g class="nodes" fill="currentColor">
+              <circle class="node" cx="80" cy="520" r="6" />
+              <circle class="node" cx="320" cy="220" r="5" />
+              <circle class="node n-hot" cx="320" cy="120" r="7" />
+              <circle class="node" cx="560" cy="280" r="5" />
+              <circle class="node n-hot" cx="820" cy="180" r="7" />
+              <circle class="node" cx="1040" cy="420" r="6" />
+              <circle class="node n-hot" cx="560" cy="480" r="6" />
+            </g>
+            <g class="turbine-g" transform="translate(980,420)">
+              <rect x="-3" y="0" width="6" height="110" fill="currentColor" opacity="0.55" />
+              <g class="blades">
+                <rect x="-4" y="-70" width="8" height="70" rx="4" fill="currentColor" />
+                <rect x="-4" y="-70" width="8" height="70" rx="4" fill="currentColor" transform="rotate(120)" />
+                <rect x="-4" y="-70" width="8" height="70" rx="4" fill="currentColor" transform="rotate(240)" />
+              </g>
+              <circle r="8" fill="currentColor" />
+            </g>
+            <path class="bolt" d="M700 80 L660 160 H720 L670 260" fill="none" stroke="#c4a35a" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <div class="solar-glow"></div>
+        </div>
+        <div class="chapter-veil"></div>
+        <div class="chapter-copy reveal">
+          <p class="work-tag">Stanford TreeHacks · 2026</p>
+          <h3 id="carbon-title">CarbonShift</h3>
+          <p>
+            A compute orchestrator that watches live carbon intensity and electricity price
+            signals, then shifts workloads when the grid is cleaner and cheaper — agent-style
+            decision loops with an explainability layer, built under hackathon pressure.
+          </p>
+          <a class="text-link" href="https://devpost.com/software/carbonshift" target="_blank" rel="noopener noreferrer">View on Devpost</a>
+        </div>
+      </section>
+
+      <!-- Transit -->
+      <section class="chapter chapter--transit" data-scene="transit" aria-labelledby="transit-title">
+        <div class="chapter-world" aria-hidden="true">
+          <div class="city-skyline"></div>
+          <div class="street">
+            <div class="lane"></div>
+          </div>
+          <div class="vta-bus">
+            <div class="bus-shell">
+              <span class="bus-brand">VTA</span>
+              <div class="bus-windows"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="bus-wheel bus-wheel--l"></div>
+            <div class="bus-wheel bus-wheel--r"></div>
+          </div>
+          <div class="gps">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="chapter-veil"></div>
+        <div class="chapter-copy reveal">
+          <p class="work-tag">Data product · Transit telemetry · SJSU</p>
+          <h3 id="transit-title">Transit telemetry, made operable</h3>
+          <p>
+            Near real-time GPS streams are noisy — missing pings, uneven update rates,
+            outliers. I built ingestion through warehouse modeling so route delays, dwell
+            patterns, and anomalies show up as something an operations team can act on.
+          </p>
+          <a class="text-link" href="https://github.com/ayushgawai/transit-system" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </section>
+
+      <!-- LeRobot -->
+      <section class="chapter chapter--lerobot" data-scene="lerobot" aria-labelledby="lerobot-title">
+        <div class="chapter-world" aria-hidden="true">
+          <div class="bench"></div>
+          <div class="so-arm">
+            <div class="so-base"></div>
+            <div class="so-shoulder">
+              <div class="so-upper">
+                <div class="so-elbow">
+                  <div class="so-fore">
+                    <div class="so-grip">
+                      <i class="jaw jaw--a"></i>
+                      <i class="jaw jaw--b"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="target"></div>
+        </div>
+        <div class="chapter-veil"></div>
+        <div class="chapter-copy reveal">
+          <p class="work-tag">Robotics · SO-101 × LeRobot · 2026</p>
+          <h3 id="lerobot-title">SO-101 × LeRobot</h3>
+          <p>
+            Setup and tooling for the SO-101 arm with LeRobot — calibration, motor ID fixes,
+            teleoperation, and dataset recording so embodied AI experiments start from a
+            machine that actually moves the way you expect.
+          </p>
+          <a class="text-link" href="https://github.com/ayushgawai/so101-lerobot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </section>
+
+      <!-- Achievements — early and unmistakable -->
       <section class="section achievements" id="achievements" aria-labelledby="awards-heading">
         <div class="section-intro">
           <p class="eyebrow">Recognition</p>
@@ -518,6 +343,77 @@
         </ul>
       </section>
 
+      <section class="section experience" id="experience" aria-labelledby="exp-heading">
+        <div class="section-intro">
+          <p class="eyebrow">Experience</p>
+          <h2 id="exp-heading">Roles where reliability was the product.</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when"><time datetime="2026-06">Jun 2026</time><span>– Aug 2026</span></div>
+            <div class="timeline-body">
+              <h3>Software Engineer Intern · Zoox</h3>
+              <p class="place">Foster City, CA · Perception Data</p>
+              <p>
+                Worked across PyMiner and ZAP to make data mining for perception training
+                self-validating and easier to operate — backend APIs, scheduled fleet jobs,
+                UI surfaces, weekly reporting, and Slack alerts so engineers learn about
+                quality and failures without hunting for them.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when"><time datetime="2025-08">Aug 2025</time><span>– Present</span></div>
+            <div class="timeline-body">
+              <h3>Graduate Research Assistant · San José State University</h3>
+              <p class="place">San José, CA</p>
+              <p>
+                Building human-centered AI systems with Prof. Guannan Liu’s lab — multimodal
+                signal pipelines, assistive mobility interfaces, and embodied AI prototypes
+                that treat attention and trust as first-class design constraints.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when"><time datetime="2024-01">Jan 2024</time><span>– Aug 2025</span></div>
+            <div class="timeline-body">
+              <h3>Data Engineer · Zscaler</h3>
+              <p class="place">Pune, India · Cloud Security Analytics</p>
+              <p>
+                Owned the hard parts of CRM-to-warehouse analytics: nested Salesforce formulas
+                that broke incremental loads, metadata-driven SQL generation with real
+                validation guardrails, and integrations that connected marketing and delivery
+                tools into pipelines leadership could actually trust.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when"><time datetime="2021-08">Aug 2021</time><span>– Dec 2023</span></div>
+            <div class="timeline-body">
+              <h3>Data Engineer · LatentView Analytics</h3>
+              <p class="place">Chennai, India</p>
+              <p>
+                Enterprise data platforms for a global media client — lakehouse migrations at
+                serious scale, automated validation before go-live, Airflow modernization, and
+                monitoring that caught SLA issues before they became escalations.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-when"><time datetime="2021-02">Feb 2021</time><span>– Aug 2021</span></div>
+            <div class="timeline-body">
+              <h3>Associate Software Engineer · Coditas</h3>
+              <p class="place">India · Healthcare backend</p>
+              <p>
+                Production Spring Boot services for a healthcare client — concurrency and
+                caching fixes, PostgreSQL tuning, and Dockerized CI so releases were less of a
+                gamble and APIs stayed stable under load.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
       <section class="section about" id="about" aria-labelledby="about-heading">
         <div class="about-grid">
           <div class="about-copy">
@@ -536,30 +432,14 @@
               ownership is how I learn fastest.
             </p>
           </div>
-
           <aside class="skills" aria-labelledby="skills-heading">
             <h3 id="skills-heading">Toolkit</h3>
             <ul class="skill-groups">
-              <li>
-                <span class="skill-label">Languages</span>
-                <span>Python, SQL, TypeScript, Java, Bash</span>
-              </li>
-              <li>
-                <span class="skill-label">Backend &amp; data</span>
-                <span>FastAPI, PostgreSQL, Snowflake, dbt, Databricks, Airflow</span>
-              </li>
-              <li>
-                <span class="skill-label">Cloud &amp; delivery</span>
-                <span>AWS, Docker, GitHub Actions, Bazel, Kubernetes</span>
-              </li>
-              <li>
-                <span class="skill-label">Applied AI</span>
-                <span>Grounded LLMs, agent workflows, PyTorch, evaluation-first design</span>
-              </li>
-              <li>
-                <span class="skill-label">Focus</span>
-                <span>Data platforms, ML data quality, production observability</span>
-              </li>
+              <li><span class="skill-label">Languages</span><span>Python, SQL, TypeScript, Java, Bash</span></li>
+              <li><span class="skill-label">Backend &amp; data</span><span>FastAPI, PostgreSQL, Snowflake, dbt, Databricks, Airflow</span></li>
+              <li><span class="skill-label">Cloud &amp; delivery</span><span>AWS, Docker, GitHub Actions, Bazel, Kubernetes</span></li>
+              <li><span class="skill-label">Applied AI</span><span>Grounded LLMs, agent workflows, PyTorch, evaluation-first design</span></li>
+              <li><span class="skill-label">Focus</span><span>Data platforms, ML data quality, production observability</span></li>
             </ul>
           </aside>
         </div>
@@ -574,20 +454,8 @@
         </p>
         <div class="contact-actions">
           <a class="btn btn-primary" href="mailto:ayushsunilgawai@gmail.com">ayushsunilgawai@gmail.com</a>
-          <a
-            class="btn btn-ghost"
-            href="https://linkedin.com/in/ayushgawai"
-            target="_blank"
-            rel="noopener noreferrer"
-            >LinkedIn</a
-          >
-          <a
-            class="btn btn-ghost"
-            href="https://github.com/ayushgawai"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
+          <a class="btn btn-ghost" href="https://linkedin.com/in/ayushgawai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ayushgawai" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </section>
     </main>
